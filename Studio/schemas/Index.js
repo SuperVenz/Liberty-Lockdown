@@ -47,16 +47,22 @@ export default {
       description: "Title for video rewind section",
     },
     {
+      title: "Feature Video",
+      name: "videoURL",
+      type: "url",
+      description: "url for featured video",
+    },
+    {
       title: "Featured Video CTA",
       name: "featuredCTA",
       type: "string",
       description: "call to action button text",
     },
     {
-      title: "Prev Video",
-      name: "videoURL",
-      type: "url",
-      description: "url for featured video",
+      title: "Featured Video CTA Link",
+      name: "featuredCtaLink",
+      type: "string",
+      description: "Link for button on feature section",
     },
     {
       title: "Store Header",

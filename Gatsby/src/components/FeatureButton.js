@@ -16,12 +16,14 @@ const Button = styled.a`
   justify-content: center;
   background: #facf03;
   border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
   @media (min-width: 600px) {
     margin-top: 0%;
     display: none;
   }
 `;
-const H3 = styled.h3``;
 function FeatureButton({ url, text }) {
   return (
     <Container>

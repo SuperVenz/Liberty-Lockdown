@@ -123,7 +123,7 @@ const IndexPage = ({ data }) => {
           title={data.sanityIndex.videoHeader}
         />
         <FeatureButton
-          url={data.sanityIndex.video}
+          url={data.sanityIndex.featuredCtaLink}
           text={data.sanityIndex.featuredCTA}
         />
       </Feature>
@@ -171,6 +171,7 @@ export const query = graphql`
       videoHeader
       videoURL
       featuredCTA
+      featuredCtaLink
       shopifyCTA
       shopifyFeature {
         alt
@@ -190,6 +191,7 @@ export const query = graphql`
         }
         alt
       }
+      shopifyURL
     }
     sanityIcons {
       heroButtonIcon {

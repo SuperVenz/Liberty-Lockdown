@@ -36,6 +36,7 @@ const Button = styled.a`
 `;
 const H3 = styled.h3`
   margin-right: 24px;
+  font-weight: bold;
 `;
 const Icon = styled(GatsbyImage)``;
 const SocialContainer = styled.div`
