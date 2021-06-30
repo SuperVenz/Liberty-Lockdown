@@ -12,6 +12,7 @@ import metaData from "./metaData";
 import colors from "./colors";
 import icons from "./icons";
 import socialMediaInfo from "./socialMediaInfo";
+import keywords from "./keywords";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -29,6 +30,8 @@ export default createSchema({
     colors,
     icons,
     socialMediaInfo,
+    keywords,
+
     /* Your types here! */
   ]),
 });

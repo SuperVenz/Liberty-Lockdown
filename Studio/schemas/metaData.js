@@ -14,7 +14,7 @@ export default {
       title: "Keywords",
       name: "keywords",
       type: "array",
-      of: [{ type: "links" }],
+      of: [{ type: "keywords" }],
       description: "Add or remove keywords for your site",
     },
     {
