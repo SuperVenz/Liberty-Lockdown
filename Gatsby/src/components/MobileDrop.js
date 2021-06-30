@@ -15,7 +15,7 @@ const Menue = styled.div`
 const StyledImg = styled(GatsbyImage)`
   width: 15%;
   margin: 10px 24px;
-  z-index: 51;
+  z-index: 61;
   :nth-child(2) {
     width: 25px;
     height: 25px;
@@ -93,8 +93,8 @@ const MobileDrop = () => {
         image={mobileVector}
         alt={data.sanityIcons.mobileMenuIcon.alt}
         open={open}
-        onClick={() => setOpen(!open)}
         onKeyDown={() => setOpen(!open)}
+        onTouchStart={() => setOpen(!open)}
       />
       <Nav open={open}>
         {data.allSanityMetaData.edges[0].node.socialMedia.map((res) => (

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const Wrapper = styled.div`
-  padding-top: 20%;
+  padding-top: 10%;
   background: #1c1f22;
   @media (min-width: 600px) {
     padding-top: 0%;
@@ -28,7 +28,7 @@ const Copywright = styled.p`
   font-weight: 300;
   line-height: 17px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
 `;
 const LinkContainer = styled.div`
   display: flex;

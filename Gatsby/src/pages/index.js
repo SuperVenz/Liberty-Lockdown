@@ -14,7 +14,7 @@ import BackgroundImage from "gatsby-background-image";
 import ShopifyImageLink from "../components/ShopifyImageLink";
 // Styles
 const Hero = styled(BackgroundImage)`
-  padding-top: 20%;
+  padding-top: 40%;
   opacity: 1 !important;
   background-size: cover;
   background: rgb(0, 0, 0);
@@ -33,7 +33,7 @@ const Hero = styled(BackgroundImage)`
   }
 `;
 const Feature = styled(BackgroundImage)`
-  margin-top: 146px;
+  padding-top: 146px;
   height: 100vh;
   background: rgb(0, 0, 0);
   background: linear-gradient(
