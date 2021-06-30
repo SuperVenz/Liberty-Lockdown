@@ -70,11 +70,15 @@ function HeroButton({
 
       <SocialContainer>
         <SocialLink href={instaUrl}>
-          <SocialImage image={instaIcon} alt={instaAlt} />
+          <SocialImage image={instaIcon} alt={instaAlt} objectFit="contain" />
         </SocialLink>
 
         <SocialLink href={twitterUrl}>
-          <SocialImage image={twitterIcon} alt={twitterAlt} />
+          <SocialImage
+            image={twitterIcon}
+            alt={twitterAlt}
+            objectFit="contain"
+          />
         </SocialLink>
       </SocialContainer>
     </Container>
