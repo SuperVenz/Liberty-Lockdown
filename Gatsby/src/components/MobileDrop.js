@@ -20,7 +20,7 @@ const StyledImg = styled(GatsbyImage)`
   :nth-child(2) {
     width: 25px;
     height: 25px;
-    margin-top: 24px;
+    margin-top: 32px;
   }
 `;
 const Nav = styled.nav`
@@ -37,16 +37,17 @@ const Nav = styled.nav`
   justify-content: space-around;
 `;
 const Icon = styled(GatsbyImage)`
-  margin-right: 24px;
-  margin-left: 5%;
+  margin-left: 8px;
 `;
 const A = styled.a`
   text-decoration: none;
   display: flex;
   flex-flow: row nowrap;
-  margin-right: 70%;
+  margin-right: 60%;
 `;
-const P = styled.p``;
+const P = styled.p`
+  padding-left: 24px;
+`;
 const OnClicker = styled.div`
   display: flex;
   align-items: center;
@@ -110,7 +111,11 @@ const MobileDrop = () => {
       <Nav open={open}>
         {data.allSanityMetaData.edges[0].node.socialMedia.map((res) => (
           <A href={res.url} key={res.url}>
-            <Icon image={res.favcon.asset.gatsbyImageData} alt={res.alt} />
+            <Icon
+              image={res.favcon.asset.gatsbyImageData}
+              alt={res.alt}
+              objectFit="contain"
+            />
             <P>{res.text}</P>
           </A>
         ))}
