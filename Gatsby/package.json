@@ -1,0 +1,39 @@
+{
+  "name": "liberty-lockdown",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Liberty Lockdown",
+  "author": "Alec Venzor",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.12.0",
+    "gatsby": "^3.6.2",
+    "gatsby-background-image": "^1.5.3",
+    "gatsby-plugin-image": "^1.7.1",
+    "gatsby-plugin-manifest": "^3.7.1",
+    "gatsby-plugin-react-helmet": "^4.7.1",
+    "gatsby-plugin-sharp": "^3.7.1",
+    "gatsby-plugin-sitemap": "^4.3.1",
+    "gatsby-plugin-styled-components": "^4.7.1",
+    "gatsby-source-filesystem": "^3.7.1",
+    "gatsby-source-sanity": "^7.0.7",
+    "gatsby-transformer-sharp": "^3.7.1",
+    "gbimage-bridge": "^0.1.4",
+    "get-youtube-id": "^1.0.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-responsive-carousel": "^3.2.18",
+    "react-youtube": "^7.13.1",
+    "styled-components": "^5.3.0"
+  }
+}
