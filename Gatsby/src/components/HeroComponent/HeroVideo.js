@@ -18,7 +18,6 @@ const Container = styled.div`
 `;
 const H2 = styled.h2`
   @media (min-width: 600px) {
-    color: white;
   }
 `;
 const Video = styled.div`
