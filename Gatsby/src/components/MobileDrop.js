@@ -8,6 +8,7 @@ const Menue = styled.div`
   top: 0;
   flex-flow: row nowrap;
   justify-content: space-between;
+  width: 100%;
   @media (min-width: 600px) {
     display: none;
   }
@@ -43,8 +44,15 @@ const A = styled.a`
   text-decoration: none;
   display: flex;
   flex-flow: row nowrap;
+  margin-right: 70%;
 `;
 const P = styled.p``;
+const OnClicker = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+`;
 const MobileDrop = () => {
   const data = useStaticQuery(graphql`
     {
@@ -89,13 +97,16 @@ const MobileDrop = () => {
   return (
     <Menue open={open}>
       <StyledImg image={logo} alt={data.sanityMetaData.logo.alt} />
-      <StyledImg
-        image={mobileVector}
-        alt={data.sanityIcons.mobileMenuIcon.alt}
-        open={open}
-        onKeyDown={() => setOpen(!open)}
+      <OnClicker
         onTouchStart={() => setOpen(!open)}
-      />
+        onKeyDown={() => setOpen(!open)}
+      >
+        <StyledImg
+          image={mobileVector}
+          alt={data.sanityIcons.mobileMenuIcon.alt}
+          open={open}
+        />
+      </OnClicker>
       <Nav open={open}>
         {data.allSanityMetaData.edges[0].node.socialMedia.map((res) => (
           <A href={res.url} key={res.url}>

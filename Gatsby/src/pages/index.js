@@ -14,6 +14,7 @@ import BackgroundImage from "gatsby-background-image";
 import ShopifyImageLink from "../components/ShopifyImageLink";
 // Styles
 const Hero = styled(BackgroundImage)`
+  z-index: 1;
   padding-top: 40%;
   opacity: 1 !important;
   background-size: cover;
