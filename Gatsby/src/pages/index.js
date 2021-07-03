@@ -26,10 +26,8 @@ const Hero = styled(BackgroundImage)`
   background-size: cover;
   @media (min-width: 600px) {
     padding-top: 15%;
-    height: 50vh;
   }
   @media (min-width: 1000px) {
-    height: 70vh;
   }
 `;
 const Feature = styled(BackgroundImage)`

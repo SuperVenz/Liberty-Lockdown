@@ -21,7 +21,7 @@ const Image = styled(GatsbyImage)`
 `;
 const Copywright = styled.p`
   margin: 10px;
-  color: gray;
+  color: white;
   font-family: Helvetica Neue LT Std;
   font-size: 14px;
   font-style: normal;
@@ -52,7 +52,7 @@ const Logo = styled(GatsbyImage)`
     width: 5%;
   }
 `;
-const Ul = styled.ul`
+const SocialMedia = styled.div`
   display: flex;
   flex-flow: column wrap;
   height: 20vh;
@@ -63,7 +63,7 @@ const Ul = styled.ul`
 const H3 = styled.h3`
   color: white;
 `;
-const Li = styled.li`
+const Div = styled.div`
   display: flex;
   flex-flow: row nowrap;
   margin-top: 16px;
@@ -91,20 +91,20 @@ function Footer({ src, alt, logoAlt, logoSrc, socialMedia }) {
       <Copywright>All Rights Reserved ©{date.getFullYear()}</Copywright>
       <LinkContainer>
         <Logo image={logoSrc} alt={logoAlt} />
-        <Ul>
+        <SocialMedia>
           <H3>Social Media</H3>
           {socialMedia.map((obj) => {
             return (
-              <Li key={obj.favcon.alt}>
+              <Div key={obj.favcon.alt}>
                 <Icon
                   image={obj.favcon.asset.gatsbyImageData}
                   alt={obj.favcon.alt}
                 />
                 <A href={obj.url}>{obj.text}</A>
-              </Li>
+              </Div>
             );
           })}
-        </Ul>
+        </SocialMedia>
       </LinkContainer>
     </Wrapper>
   );
