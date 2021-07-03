@@ -44,7 +44,8 @@ const LinkContainer = styled.div`
 `;
 const Logo = styled(GatsbyImage)`
   margin-left: 24px;
-  width: 30%;
+  width: 20%;
+  margin-right: 24px;
   @media (min-width: 600px) {
     width: 10%;
   }
@@ -54,22 +55,30 @@ const Logo = styled(GatsbyImage)`
 `;
 const SocialMedia = styled.div`
   display: flex;
-  flex-flow: column wrap;
-  height: 20vh;
+  flex-flow: row wrap;
   width: 100%;
+  height: 40vh;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 600px) {
+    height: 100%;
+  }
 `;
 const H3 = styled.h3`
   color: white;
+  @media (min-width: 600px) {
+    margin-bottom: 32px;
+  }
 `;
 const Div = styled.div`
   display: flex;
   flex-flow: row nowrap;
-  margin-top: 16px;
+  margin-top: 24px;
   width: 50%;
   @media (min-width: 600px) {
-    width: 15%;
+    width: 20%;
+    padding-left: 5%;
   }
   @media (min-width: 1000px) {
     margin-top: 24px;
@@ -92,7 +101,6 @@ function Footer({ src, alt, logoAlt, logoSrc, socialMedia }) {
       <LinkContainer>
         <Logo image={logoSrc} alt={logoAlt} />
         <SocialMedia>
-          <H3>Social Media</H3>
           {socialMedia.map((obj) => {
             return (
               <Div key={obj.favcon.alt}>
