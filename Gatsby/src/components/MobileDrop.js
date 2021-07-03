@@ -32,7 +32,7 @@ const Nav = styled.nav`
   align-content: center;
   position: absolute;
   width: 100%;
-  height: 30vh;
+  height: 50vh;
   background: black;
   justify-content: space-around;
 `;
@@ -51,7 +51,7 @@ const P = styled.p`
 const OnClicker = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   width: 40%;
 `;
 const MobileDrop = () => {
