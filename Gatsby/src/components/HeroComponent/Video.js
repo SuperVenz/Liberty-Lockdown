@@ -40,6 +40,7 @@ function Video({ title, url }) {
       <VideoWrapper>
         <Iframe
           src={url}
+          loading="lazy"
           title={url}
           frameBorder="0"
           webkitallowfullscreen="true"

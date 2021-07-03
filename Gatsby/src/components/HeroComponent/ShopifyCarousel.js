@@ -110,6 +110,7 @@ function ShopifyCarousel({ title, shopifyFeature }) {
             <Wrapper key={obj.alt}>
               <StyledImage
                 objectFit="contain"
+                loading="eager"
                 image={obj.shopifyPicture.asset.gatsbyImageData}
                 alt={obj.alt}
               />

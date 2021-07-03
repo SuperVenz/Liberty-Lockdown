@@ -50,6 +50,7 @@ function HeroVideo({ title, url }) {
           src={url}
           title={url}
           frameBorder="0"
+          loading="lazy"
           webkitallowfullscreen="true"
           mozallowfullscreen="true"
           allowFullScreen
