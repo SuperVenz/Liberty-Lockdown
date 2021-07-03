@@ -107,6 +107,7 @@ function Footer({ src, alt, logoAlt, logoSrc, socialMedia }) {
                 <Icon
                   image={obj.favcon.asset.gatsbyImageData}
                   alt={obj.favcon.alt}
+                  objectFit="contain"
                 />
                 <A href={obj.url}>{obj.text}</A>
               </Div>
