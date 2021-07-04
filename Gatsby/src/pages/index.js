@@ -76,17 +76,7 @@ const IndexPage = ({ data }) => {
   const heroConverted = convertToBgImage(heroBackground);
   const featureConverted = convertToBgImage(featureBackground);
   return (
-    <Layout
-      pageMeta={{
-        keywords: [
-          "Web Development",
-          "Contact",
-          "Liberty Lockdown",
-          "San Diego",
-        ],
-        description: "Test Test Test",
-      }}
-    >
+    <Layout>
       <Hero {...heroConverted} preserveStackingContext>
         <HeroMain
           heroTitle={data.sanityIndex.heroTitle}

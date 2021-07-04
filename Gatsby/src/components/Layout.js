@@ -3,8 +3,23 @@ import MobileDrop from "./MobileDrop";
 import Helmet from "react-helmet";
 import Reset from "../styles/reset";
 import Nav from "./Nav";
-export default function Layout({ pageMeta, children }) {
-  console.log(children);
+import { useStaticQuery, graphql } from "gatsby";
+
+export default function Layout({ children }) {
+  const data = useStaticQuery(graphql`
+    {
+      allSanityMetaData {
+        edges {
+          node {
+            keywords {
+              text
+            }
+            description
+          }
+        }
+      }
+    }
+  `);
   return (
     <div className="layout ">
       <Nav />
@@ -18,10 +33,16 @@ export default function Layout({ pageMeta, children }) {
         <html lang="en" />
 
         {/* The rest we set dynamically with props */}
-        <meta name="description" content={pageMeta.description} />
+        <meta
+          name="description"
+          content={data.allSanityMetaData.edges[0].node.description}
+        />
 
         {/* We pass an array of keywords, and then we use the Array.join method to convert them to a string where each keyword is separated by a comma */}
-        <meta name="keywords" content={pageMeta.keywords.join(",")} />
+        <meta
+          name="keywords"
+          content={data.allSanityMetaData.edges[0].node.keywords.join(",")}
+        />
       </Helmet>
       <Reset />
       <div className="child ">{children}</div>
