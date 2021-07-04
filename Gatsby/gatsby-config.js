@@ -22,7 +22,6 @@ module.exports = {
       options: {
         start_url: `/`,
         icon: "src/images/icon.png",
-        cache_busting_mode: "none",
         crossOrigin: `anonymous`, // `use-credentials` or `anonymous`
         display: `standalone`,
         icon: "src/images/icon.png",
