@@ -213,6 +213,36 @@ text-align: center;
 .layout{
 
 }
+
+.yt-lite {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+/* gradient */
+.yt-lite::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==);
+    background-position: top;
+    background-repeat: repeat-x;
+    height: 60px;
+    padding-bottom: 50px;
+    width: 100%;
+    transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+    thanks https://css-tricks.com/responsive-iframes/
+*/
+
 `;
 
 export default reset;

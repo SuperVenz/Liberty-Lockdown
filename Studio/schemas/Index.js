@@ -36,8 +36,8 @@ export default {
     {
       title: "Hero Video",
       name: "heroVideoUrl",
-      type: "url",
-      description: "insert url for video",
+      type: "string",
+      description: "insert youtube ID for video",
     },
 
     {
@@ -49,8 +49,8 @@ export default {
     {
       title: "Feature Video",
       name: "videoURL",
-      type: "url",
-      description: "url for featured video",
+      type: "string",
+      description: "insert youtube ID for video",
     },
     {
       title: "Featured Video CTA",

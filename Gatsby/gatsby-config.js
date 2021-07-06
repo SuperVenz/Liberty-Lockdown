@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Liberty Lockdown",
-    siteUrl: `https://www.example.com`,
+    siteUrl: "https://libertylockdownpodcast.com/",
   },
   plugins: [
     {

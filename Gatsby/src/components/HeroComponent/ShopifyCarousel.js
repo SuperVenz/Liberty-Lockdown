@@ -36,6 +36,7 @@ const Text = styled.a`
   justify-content: center;
   align-content: center;
   align-items: center;
+  text-decoration: none;
   :hover {
     cursor: pointer;
   }

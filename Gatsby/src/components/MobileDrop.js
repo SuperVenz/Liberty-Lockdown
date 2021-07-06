@@ -113,7 +113,7 @@ const MobileDrop = () => {
           <A href={res.url} key={res.url}>
             <Icon
               image={res.favcon.asset.gatsbyImageData}
-              alt={res.alt}
+              alt={res.favcon.alt}
               objectFit="contain"
             />
             <P>{res.text}</P>
