@@ -13,7 +13,7 @@ const Div = styled.div`
     height: 70%;
     padding-left: 15%;
   }
-  @media (min-width: 600px) {
+  @media (min-width: 1000px) {
     width: 40%;
     height: 50%;
     padding-left: 30%;
