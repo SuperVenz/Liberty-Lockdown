@@ -90,14 +90,24 @@ function Form({ title }) {
         description: description,
       }),
     })
-      .then(() => navigate("/thankyou"))
+      .then(() => navigate("/"))
       .catch((error) => alert(error));
   };
 
   return (
     <Wrapper>
       <H2>{title}</H2>
-      <FormBox>
+      <FormBox
+        autoComplete="on"
+        netlify-honeypot="bot-field"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        action="/"
+        onSubmit={handleSubmit}
+      >
+        <input name="form-name" value="Netlify Rocks" type="hidden" />
+        <input type="hidden" name="bot-field" />
         <Label htmlFor="name">
           <StringInput
             required
