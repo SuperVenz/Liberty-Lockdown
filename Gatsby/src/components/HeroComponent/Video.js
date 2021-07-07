@@ -25,7 +25,12 @@ function Video({ title, url }) {
     <Container>
       <H2>{title}</H2>
       <Div>
-        <LiteYoutubeEmbed id={url} mute={false} />
+        <LiteYoutubeEmbed
+          id={url}
+          mute={false}
+          isMobile={true}
+          noCookie={true}
+        />
       </Div>
     </Container>
   );

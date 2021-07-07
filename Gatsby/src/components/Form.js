@@ -90,7 +90,7 @@ function Form({ title }) {
         description: description,
       }),
     })
-      .then(() => navigate("/"))
+      .then(() => navigate("/thankyou"))
       .catch((error) => alert(error));
   };
 

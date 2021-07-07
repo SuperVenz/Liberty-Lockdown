@@ -22,7 +22,7 @@ function HeroVideo({ title, url }) {
   return (
     <Container>
       <H2>{title}</H2>
-      <LiteYoutubeEmbed id={url} mute={false} />
+      <LiteYoutubeEmbed id={url} mute={false} isMobile={true} noCookie={true} />
     </Container>
   );
 }
