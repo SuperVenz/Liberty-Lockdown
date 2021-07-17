@@ -35,8 +35,12 @@ const Button = styled.a`
   }
 `;
 const H3 = styled.h3`
+  font-size: 16px;
   margin-right: 24px;
   font-weight: bold;
+  @media (min-width: 600px) {
+    font-size: 24px;
+  }
 `;
 const Icon = styled(GatsbyImage)``;
 const SocialContainer = styled.div`

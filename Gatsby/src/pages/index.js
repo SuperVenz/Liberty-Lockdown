@@ -32,7 +32,7 @@ const Hero = styled(BackgroundImage)`
 `;
 const Feature = styled(BackgroundImage)`
   padding-top: 146px;
-  height: 100vh;
+  height: 70vh;
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
