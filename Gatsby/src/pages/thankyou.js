@@ -39,7 +39,7 @@ function Thankyou(props) {
     <Layout>
       <Wrapper>
         <H2>Thank you for the submission.</H2>
-        <StyledLink to="index"> Go back</StyledLink>
+        <StyledLink to="/index"> Go back</StyledLink>
       </Wrapper>
     </Layout>
   );
