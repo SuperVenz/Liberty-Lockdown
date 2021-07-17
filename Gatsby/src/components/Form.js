@@ -40,13 +40,14 @@ const StringInput = styled.input`
   padding: 20px 0px;
   border: solid 1px #facf03;
   border-radius: 10px;
+  padding-left: 8px;
 `;
 const AreaText = styled.textarea`
   width: 80%;
   font-size: 18px;
   border: solid 1px #facf03;
   border-radius: 10px;
-
+  padding-left: 8px;
   height: 200px;
 `;
 const Submit = styled.button`

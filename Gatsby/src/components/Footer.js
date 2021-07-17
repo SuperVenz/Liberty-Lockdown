@@ -65,12 +65,7 @@ const SocialMedia = styled.div`
     height: 100%;
   }
 `;
-const H3 = styled.h3`
-  color: white;
-  @media (min-width: 600px) {
-    margin-bottom: 32px;
-  }
-`;
+
 const Div = styled.div`
   display: flex;
   flex-flow: row nowrap;

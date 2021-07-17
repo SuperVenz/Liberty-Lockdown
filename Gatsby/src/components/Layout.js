@@ -31,7 +31,7 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Alec Venzor" />
         <html lang="en" />
-
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" />
         {/* The rest we set dynamically with props */}
         <meta
           name="description"

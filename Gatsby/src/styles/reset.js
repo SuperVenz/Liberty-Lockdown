@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 const reset = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 html,
 body,
 div,

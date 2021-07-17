@@ -16,16 +16,18 @@ const Menue = styled.div`
 `;
 const StyledImg = styled(GatsbyImage)`
   @media (min-width: 600px) {
-    width: 10%;
+    width: 50px;
+    height: 50px;
     margin: 10px 24px;
     z-index: 50;
   }
   @media (min-width: 1000px) {
-    width: 4%;
+    width: 100px;
+    height: auto;
   }
 `;
 const Navbar = styled.nav`
-  padding-right: 10%;
+  padding-right: 16px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -35,8 +37,8 @@ const A = styled.a`
   display: flex;
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  margin-left: 32px;
+  font-size: 14px;
+  margin-left: 16px;
   @media (min-width: 1000px) {
     font-size: 18px;
   }
@@ -44,6 +46,7 @@ const A = styled.a`
 
 const Icon = styled(GatsbyImage)`
   margin-right: 8px;
+  width: 25px;
 `;
 function Nav(props) {
   const data = useStaticQuery(graphql`
@@ -85,6 +88,7 @@ function Nav(props) {
             <Icon
               image={res.favcon.asset.gatsbyImageData}
               alt={res.favcon.alt}
+              objectFit="contain"
             />
             {res.text}
           </A>
